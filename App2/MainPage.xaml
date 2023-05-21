@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.MainPage"
+             BackgroundColor="#1e2952">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="3*" />
+            </Grid.RowDefinitions>
+
+            <Entry x:Name="numberEntry" BackgroundColor="#162138" TextColor="White" FontSize="36" HorizontalTextAlignment="End" VerticalTextAlignment="Center" Grid.Row="0" />
+
+            <Grid BackgroundColor="#162138" Grid.Row="1">
+                <Label x:Name="resultLabel" TextColor="White" FontSize="36" HorizontalTextAlignment="End" VerticalTextAlignment="Center" />
+                <Label x:Name="resultDisplayLabel" TextColor="White" FontSize="36" HorizontalTextAlignment="End" VerticalTextAlignment="Center" />
+            </Grid>
+
+            <Frame BackgroundColor="#1e2952" Padding="10" CornerRadius="20" Grid.Row="1">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Button Text="+" BackgroundColor="Black" TextColor="Yellow" Grid.Row="0" Grid.Column="0" Clicked="OnButtonClicked" />
+                    <Button Text="-" BackgroundColor="Black" TextColor="Yellow" Grid.Row="0" Grid.Column="1" Clicked="OnButtonClicked" />
+                    <Button Text="x" BackgroundColor="Black" TextColor="Yellow" Grid.Row="0" Grid.Column="2" Clicked="OnButtonClicked" />
+                    <Button Text="/" BackgroundColor="Black" TextColor="Yellow" Grid.Row="0" Grid.Column="3" Clicked="OnButtonClicked" />
+
+                    <Button Text="7" BackgroundColor="Black" TextColor="White" Grid.Row="1" Clicked="OnButtonClicked" />
+                    <Button Text="8" BackgroundColor="Black" TextColor="White" Grid.Row="1" Grid.Column="1" Clicked="OnButtonClicked" />
+                    <Button Text="9" BackgroundColor="Black" TextColor="White" Grid.Row="1" Grid.Column="2" Clicked="OnButtonClicked" />
+                    <Button Text="C" BackgroundColor="Black" TextColor="Red" Grid.Row="1" Grid.Column="3" Clicked="OnClearClicked" />
+
+                    <Button Text="4" BackgroundColor="Black" TextColor="White" Grid.Row="2" Clicked="OnButtonClicked" />
+                    <Button Text="5" BackgroundColor="Black" TextColor="White" Grid.Row="2" Grid.Column="1" Clicked="OnButtonClicked" />
+                    <Button Text="6" BackgroundColor="Black" TextColor="White" Grid.Row="2" Grid.Column="2" Clicked="OnButtonClicked" />
+                    <Button Text="AC" BackgroundColor="Black" TextColor="Red" Grid.Row="2" Grid.Column="3" Clicked="OnAllClearClicked" />
+
+                    <Button Text="1" BackgroundColor="Black" TextColor="White" Grid.Row="3" Clicked="OnButtonClicked" />
+                    <Button Text="2" BackgroundColor="Black" TextColor="White" Grid.Row="3" Grid.Column="1" Clicked="OnButtonClicked" />
+                    <Button Text="3" BackgroundColor="Black" TextColor="White" Grid.Row="3" Grid.Column="2" Clicked="OnButtonClicked" />
+
+                    <Button Text="Roberth Lima" BackgroundColor="Black" TextColor="White" Grid.Row="4" />
+                    <Button Text="0" BackgroundColor="Black" TextColor="White" Grid.Row="4" Grid.Column="1" Clicked="OnButtonClicked" />
+                    <Button Text="." BackgroundColor="Black" TextColor="White" Grid.Row="4" Grid.Column="2" Clicked="OnButtonClicked" />
+                    <Button Text="=" BackgroundColor="Red" TextColor="White" FontSize="24" Grid.Row="3" Grid.RowSpan="2" Grid.Column="3" Clicked="OnButtonClicked" />
+
+                </Grid>
+            </Frame>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

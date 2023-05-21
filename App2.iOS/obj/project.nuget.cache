@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "2fV5ZhZLX1RGJOXe65dDxyhqOe2a/uYj6zgkBCP5npCLTNy1Oo7tPVyzBpnVJeVq41dGPrqw3sMWseeeqXUO+A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\xrobe\\Desktop\\App2\\App2.iOS\\App2.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\xrobe\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\xrobe\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\xrobe\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}
